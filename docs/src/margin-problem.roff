@@ -1,0 +1,70 @@
+\" To compile this documentation from `docs/src/`, run:
+\" $ groff -Tdvi margin-problem.roff > ../margin-problem.dvi
+\"
+.ps 12
+.vs 14
+As mentioned in the SCSS stylesheet, \f9styles/scss/index.scss\fP, the portion
+of code used to give the look-and-feel of a ``margin'' was extremely inadequate
+for the reason that it specified for the \fIpadding\fP to be present instead of
+an actual \fImargin\fP, although the antecedent intention was actually to
+specify a \fImargin\fP to an element.
+
+The reason why the \fImargin\fP was not used, but the \fIpadding\fP property was
+used instead is due to the fact that margins add a piece of specified width to
+the \fBoutside\fP of an element. In general, this is okay, but in this case, it
+isn't. There are two elements horizontally adjacent to each other and each of
+them takes \f950vw\fP on screen, adding up to \f9100vw\fP when both of them are
+together. Their adjacency is made possible with the help of a \f9float: left;\fP
+rule. Without a horizontal margin, they are directly adjacent each other \(em
+touching, in fact. Since the antecedent intention is that they not touch each
+other, a margin is needed between the two elements. When the margin is specified
+using the \f9margin\fP property, the total horizontal width which the two
+elements take up becomes more than \f9100vw\fP; thus, the browser renders a
+line-break and puts the element on another line due to overflow.
+
+Putting an element on another line is something less than desriable. The ad-hoc
+to this sub-problem was to add a padding using the \f9padding\fP property, so
+that no widths are added to the outside of the margin's box, but to the inside
+of the box instead.
+.ft I
+So far, it is the only solution we know of, and it has a minor wrinkle.
+.ft
+It breaks the philosophy of semantics: we wanted a margin, not a padding. What
+we basically did was pretend that the padding is a margin and lied to SCSS about
+it. White lies like these can only take a web developer so far.
+
+That is not the only extra smaller problem that the ad-hoc is causing. Another
+major problem is when another element is added within the element to which a
+padding is specified for \fImargin\fP. When the nested element is set to expand
+within the padded element due to transitions in CSS3, it covers the padding,
+making the ``margin'' virtually invisible. An easy-to-notice wrinkle in the
+designing process to a keen observer with a background in web development.
+
+The problematic ad-hoc is shown here (SCSS):
+
+.ft 9
+.in +0.3i
+.ll -0.3i
+&:nth-child(2), &:nth-child(4) {
+  padding-left: 2px;
+}
+.ll +0.3i
+.in -0.3i
+.ft
+
+Since the problem is a much too big project. I've put together a test case of
+the problem, so that the problem can be visualized and the code can be
+inspected. \fBNote:\fP the test case does not reproduce the sub-problem caused
+by the ad-hoc solution, but reproduces the initial problem I had of adding a
+margin to a horizontal-cover element. The focus here should not be on the ad-hoc
+problem since the ad-hoc problem is already bad and we can just throw it away
+right after this, but the focus should be on the solution to the margin problem
+which was initially encountered.
+
+The test case is located in \f9docs/misc/margin-problem-test/\fP relative to the
+repository's directory.
+
+.ti 0.3i
+Typeset by Stephanie Bj\[:o]rk, October, 11 2017, on Nroff. \" <3
+
+\" vim: sw=2 tw=80 wrap
