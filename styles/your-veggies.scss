@@ -1,0 +1,49 @@
+#mainmatter {
+  margin: 100px auto 0 auto; }
+  #mainmatter article {
+    width: 70%; }
+    #mainmatter article #pagetitle {
+      font-family: "Coming Soon", cursive;
+      font-size: 3em;
+      text-align: center;
+      color: #4b7329;
+      margin-bottom: 4rem; }
+    #mainmatter article .thai {
+      margin-top: 2em; }
+    #mainmatter article section {
+      margin-bottom: 10vh; }
+      #mainmatter article section .secthead {
+        width: 100%; }
+        #mainmatter article section .secthead img {
+          width: 50%;
+          display: block;
+          margin: auto;
+          margin-bottom: 1em; }
+      #mainmatter article section .secthead2 {
+        width: 100%; }
+        #mainmatter article section .secthead2 img {
+          width: 49%;
+          float: left;
+          margin-bottom: 1em; }
+        #mainmatter article section .secthead2 img:nth-child(1) {
+          margin-right: 0.5em; }
+      #mainmatter article section .secthead3 {
+        width: 100%; }
+        #mainmatter article section .secthead3 img {
+          width: 32.66667%;
+          float: left;
+          margin-bottom: 1em; }
+        #mainmatter article section .secthead3 img:nth-child(1) {
+          margin-right: 0.33333em; }
+        #mainmatter article section .secthead3 img:nth-child(2) {
+          margin-right: 0.33333em; }
+      #mainmatter article section .sectcontent {
+        clear: both; }
+        #mainmatter article section .sectcontent p {
+          margin: 0.5em 0; }
+
+.light-green {
+  color: #92d050; }
+
+/* vim: sw=2 tw=80 wrap
+*/
