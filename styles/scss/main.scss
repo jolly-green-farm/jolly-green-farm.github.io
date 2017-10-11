@@ -1,0 +1,271 @@
+// main.scss    SCSS styling rules globally
+//
+// Update me:
+// $ sass styles/scss/main.scss styles/main.css
+
+// Module imports
+@import "modules/colors";
+
+/* Fonts:
+ * Coming Soon - Open Window
+ * Open Sans - Steve Matteson
+ * Taviraj - Cadson Demak (th_TH.UTF-8)
+ */
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Open+Sans|Taviraj');
+
+/* For desktops and laptops, mostly. */
+@media only screen and (min-width: 1024px) {
+  #frontmatter {
+    width: 100%;
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      z-index: 10;
+
+      width: 100%;
+      padding: 1rem;
+      
+      background: #fff;
+      background: rgba(255, 255, 255, 0.8);
+
+      ul {
+        float: right;
+
+        li {
+          display: inline-block;
+          text-transform: uppercase;
+          margin-left: 2em;
+
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+
+        }
+      }
+    }
+  }
+
+  #mainmatter {
+    #shopping {
+      width: 100%;
+      margin: 10vh auto;
+      
+      text-align: center;
+
+      h1 {
+        font: {
+          family: "Coming Soon", cursive;
+          size: 2rem;
+        }
+        color: $dark-green;
+        
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+  #backmatter {
+    background-color: $dark-green;
+    color: white;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    #nav {
+      text-transform: uppercase;
+    }
+
+    #contact {
+      #contact-info-desktop {
+        display: block;
+      }
+
+      #contact-info-mobile {
+        display: none;
+      }
+    }
+
+    #nav, #contact, #license {
+      float: left;
+      width: 33%;
+
+      padding: 2em;
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        color: lighten($light-green, 10%);
+        text-decoration: none;
+      }
+    }
+
+    #copyright {
+      clear: both;
+
+      position: relative;
+      bottom: 0;
+      left: 0;
+
+      font-size: small;
+      text-align: center;
+    }
+
+    
+    h1 {
+      font-size: 1.5rem;
+      border-bottom: 1px solid #888;
+      text-transform: uppercase;
+    }
+
+    ul, p {
+      margin-top: 1em;
+    }
+  }
+}
+
+/* For portable devices, mostly */
+@media only screen and (max-width: 1023px) {
+  #frontmatter {
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+
+    #navbar {
+      text-align: center;
+
+      margin-bottom: 0.75em;
+
+      
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        width: 90%;
+      }
+
+      ul {
+        margin: 1em 0;
+        padding: 1em 0;
+        border: 1px solid #aaa; // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        border-width: 1px 0;
+
+        font-size: 1.3em;
+
+        li {
+          list-style-type: none;
+          text-transform: uppercase;
+          line-height: 3ex; // omg. so many exes but not girlfriends. </3
+        }
+      }
+    }
+  }
+
+  #mainmatter {
+    #shopping {
+      width: 100%;
+      margin: 3rem auto;
+      
+      text-align: center;
+      h1 {
+        font: {
+          family: "Coming Soon", cursive;
+          size: 2rem;
+        }
+        color: $dark-green;
+      }
+    }
+  }
+
+  #backmatter {
+    background-color: $dark-green;
+    color: white;
+
+    min-height: 100vh;
+    min-width: 300px;
+
+    padding-top: 1em;
+    text-align: center;
+
+    #nav {
+      text-transform: uppercase;
+    }
+
+    #contact {
+      #contact-info-desktop {
+        display: none;
+      }
+
+      #contact-info-mobile {
+        display: block;
+
+        table {
+          text-align: left;
+          display: inline-block;
+
+          th {
+            padding-right: 2em;
+          }
+        }
+      }
+    }
+
+    #nav, #contact, #license {
+      width: 80%;
+      margin: 1.5em auto;
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        color: lighten($light-green, 10%);
+        text-decoration: none;
+      }
+    }
+
+    #copyright {
+      position: relative;
+      bottom: 0;
+      left: 0;
+
+      font-size: small;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.thai {
+  font-family: "Taviraj", serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; // This is the main font.
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  max-width: 1920px;
+}
+
+/* vim: tw=80 sw=2 wrap
+*/

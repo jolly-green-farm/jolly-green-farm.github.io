@@ -1,0 +1,136 @@
+// index.scss   SCSS styling rules specific to index.html
+// 
+// Update me:
+// $ sass styles/scss/index.scss styles/index.css
+
+// Module imports
+@import "modules/colors";
+
+// Mixins
+@mixin centralizedbg($url) {
+  background: {
+    image: url($url);
+    position: center center;
+    size: cover;
+  }
+}
+
+/* For desktops and laptops, mostly. */
+@media only screen and (min-width: 1024px) {
+  #mainmatter {
+    .slide {
+      width: 100%;
+      height: 100vh;
+      min-height: 400px;
+
+      margin-bottom: 2px;
+
+      overflow: hidden;
+
+      // Content definition for each slide
+      #img-ourbabies {
+        @include centralizedbg("../images/index/01ourbabies.png");
+      }
+
+      #img-overcoming {
+        @include centralizedbg("../images/index/02overcoming.png");
+      }
+
+      #img-deepsat {
+        @include centralizedbg("../images/index/03deepsat.png");
+      }
+
+      #img-celebrating {
+        @include centralizedbg("../images/index/04celebrating.png");
+      }
+      // END Content definition for each slide
+
+      .slide-img {
+        height: 100%;
+
+        transition: transform 10s;
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
+
+      .slide-txt {
+        position: relative;
+        bottom: 90%;
+        left: 0;
+
+        padding: 1rem 0;
+
+        font-family: "Coming Soon", cursive;
+        font-size: 3.5em;
+        text-align: center;
+        color: white;
+
+        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+/* For portable devices, mostly */
+@media only screen and (max-width: 1023px) {
+  #mainmatter {
+    .slide {
+      width: 100%;
+      height: 50vh;
+
+      min-width: 500px;
+
+      margin-bottom: 2px;
+
+      overflow: hidden;
+
+      // Content definition for each slide
+      #img-ourbabies {
+        @include centralizedbg("../images/index/01ourbabies.png");
+        background-position: center bottom;
+      }
+
+      #img-overcoming {
+        @include centralizedbg("../images/index/02overcoming.png");
+      }
+
+      #img-deepsat {
+        @include centralizedbg("../images/index/03deepsat.png");
+      }
+
+      #img-celebrating {
+        @include centralizedbg("../images/index/04celebrating.png");
+      }
+      // END Content definition for each slide
+
+      .slide-img {
+        height: 100%;
+
+        transition: transform 8s;
+        &:hover {
+          transform: scale(1.075, 1.075);
+        }
+      }
+
+      .slide-txt {
+        position: relative;
+        bottom: 90%;
+        left: 0;
+
+        padding: 1rem 0;
+
+        font-family: "Coming Soon", cursive;
+        font-size: 2.2em;
+        text-align: center;
+        color: white;
+
+        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+// vim: tw=80 sw=2 wrap

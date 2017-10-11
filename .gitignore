@@ -1,0 +1,12 @@
+# .gitignore for "jolly-green"
+
+# CSS(.map) files in `styles/` are machine-generated.
+# I just cringe at the notion of reading it. >:(
+#
+# WARNING: The presence of ^*.css$ files are essential in production. Keep them
+# on those occasions, maybe? :p
+styles/*.css*
+
+# The Sass preprocessor tends to leave behind deletable cache files.
+# We should just get rid of them.
+styles/scss/.sass-cache/
