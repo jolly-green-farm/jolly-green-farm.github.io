@@ -52,24 +52,28 @@
   #mainmatter {
     #shopping {
       width: 100%;
-      margin: 10vh auto;
+      height: 20vh;
+      margin: 10vh auto 0 auto;
 
       #amisrtbl {
         margin: auto;
         width: 40%;
 
+
         #amisrvrb {
           float: left;
-          width: 30%;
+          width: 20%;
+          overflow: hidden;
 
           position: relative;
           top: 1ex;
 
+          font-size: 1.25em;
         }
 
         #amisrsbj {
           float: left;
-          width: 70%;
+          width: 80%;
 
           text-align: right;
           padding-right: 2em;
@@ -199,21 +203,22 @@
   #mainmatter {
     #shopping {
       width: 100%;
-      margin: 10vh auto;
+      height: 20vh;
+      margin: 10vh auto 0 auto;
       
-      text-align: center;
-
       #amisrtbl {
         margin: auto;
-        width: 40%;
+        width: 50%;
 
         #amisrvrb {
           float: left;
           width: 30%;
+          overflow: hidden;
 
           position: relative;
           top: 1ex;
 
+          font-size: 1.25em;
         }
 
         #amisrsbj {
@@ -231,6 +236,7 @@
           size: 2rem;
         }
         color: $dark-green;
+        text-align: center;
 
         margin-bottom: 0.5em;
 
@@ -324,5 +330,4 @@ body {
   max-width: 1920px;
 }
 
-/* vim: tw=80 sw=2 wrap
-*/
+// vim: tw=80 sw=2 wrap
