@@ -53,17 +53,44 @@
     #shopping {
       width: 100%;
       margin: 10vh auto;
-      
-      text-align: center;
+
+      #amisrtbl {
+        margin: auto;
+        width: 40%;
+
+        #amisrvrb {
+          float: left;
+          width: 30%;
+
+          position: relative;
+          top: 1ex;
+
+        }
+
+        #amisrsbj {
+          float: left;
+          width: 70%;
+
+          text-align: right;
+          padding-right: 2em;
+        }
+      }
 
       h1 {
         font: {
           family: "Coming Soon", cursive;
           size: 2rem;
         }
+        text-align: center;
         color: $dark-green;
-        
+
         margin-bottom: 0.5em;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+        
       }
     }
   }
@@ -172,15 +199,45 @@
   #mainmatter {
     #shopping {
       width: 100%;
-      margin: 3rem auto;
+      margin: 10vh auto;
       
       text-align: center;
+
+      #amisrtbl {
+        margin: auto;
+        width: 40%;
+
+        #amisrvrb {
+          float: left;
+          width: 30%;
+
+          position: relative;
+          top: 1ex;
+
+        }
+
+        #amisrsbj {
+          float: left;
+          width: 70%;
+
+          text-align: right;
+          padding-right: 2em;
+        }
+      }
+
       h1 {
         font: {
           family: "Coming Soon", cursive;
           size: 2rem;
         }
         color: $dark-green;
+
+        margin-bottom: 0.5em;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
       }
     }
   }
