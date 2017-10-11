@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Margin Problem Test case</title>
+
+<style>
+#container {
+  width: 100vw;
+}
+
+#container div {
+  float: left;
+  width: 50%;
+  height: 400px;
+
+  font-family: sans-serif;
+  font-size: 4em;
+  color: pink;
+}
+
+#container #alpha {
+  background-color: yellow;
+
+  margin-right: 1px; /* Our problem starts here, but we still want a margin. */
+}
+
+#container #beta {
+  background-color: blue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+</style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="alpha">
+        &alpha;
+      </div>
+      <div id="beta">
+        &beta;
+      </div>
+  </body>
+</html>
+
+<!-- vim: sw=2 tw=80 wrap
+-->
