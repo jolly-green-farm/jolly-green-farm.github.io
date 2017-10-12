@@ -48,7 +48,29 @@
         text-align: center;
         color: $dark-green;
 
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+      }
+      
+      #toc {
+        font: {
+          family: "Coming Soon", cursive;
+          size: 1.2em;
+        }
+        color: $dark-green;
+        text-align: center;
+
+        a {
+          color: inherit;
+        }
+
+        ul {
+          display: inline-block;
+
+          li {
+            display: inline;
+            margin-right: 2em;
+          }
+        }
       }
 
       .thai {
@@ -56,7 +78,7 @@
       }
 
       section {
-        margin-bottom: 10vh;
+        padding-top: 10vh;
 
 
         .secthead {
@@ -98,7 +120,31 @@
         text-align: center;
         color: $dark-green;
 
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      #toc {
+        font: {
+          family: "Coming Soon", cursive;
+          size: 1.2em;
+        }
+        color: $dark-green;
+        text-align: center;
+
+        margin-bottom: 10vh;
+
+        a {
+          color: inherit;
+        }
+
+        ul {
+          display: inline-block;
+
+          li {
+            display: inline;
+            margin-right: 2em;
+          }
+        }
       }
 
       .thai {
