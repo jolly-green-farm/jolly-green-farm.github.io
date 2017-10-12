@@ -5,6 +5,7 @@
 
 // Module imports
 @import "modules/colors";
+@import "classes/article";
 
 @mixin img-placement($n) {
   width: 100%;
@@ -34,53 +35,8 @@
 
 @media only screen and (min-width: 1024px) {
   #mainmatter {
-    margin-top: 10vh;
-
     article {
-      width: 70%;
-      margin: auto;
-
-      #pagetitle {
-        font: {
-          family: "Coming Soon", cursive;
-          size: 3em;
-        }
-        text-align: center;
-        color: $dark-green;
-
-        margin-bottom: 2rem;
-      }
-      
-      #toc {
-        font: {
-          family: "Coming Soon", cursive;
-          size: 1.2em;
-        }
-        color: $dark-green;
-        text-align: center;
-
-        a {
-          color: inherit;
-        }
-
-        ul {
-          display: inline-block;
-
-          li {
-            display: inline;
-            margin-right: 2em;
-          }
-        }
-      }
-
-      .thai {
-        margin-top: 2em;
-      }
-
       section {
-        padding-top: 10vh;
-
-
         .secthead {
           @include img-placement(1);
         }
@@ -94,89 +50,31 @@
         
         .sectcontent {
           clear: both;
-
-          p {
-            margin: 0.5em 0;
-          }
         }
       }
     }
   }
 }
+
 
 @media only screen and (max-width: 1023px) {
-  #mainmatter {
-    margin-top: 10vh;
-
-    article {
-      width: 90%;
-      margin: auto;
-
-      #pagetitle {
-        font: {
-          family: "Coming Soon", cursive;
-          size: 3em;
-        }
-        text-align: center;
-        color: $dark-green;
-
-        margin-bottom: 2rem;
+  section {
+    .secthead, .secthead2, .secthead3 {
+      img {
+        width: 50%;
+        display: block;
+        margin: auto;
       }
-
-      #toc {
-        font: {
-          family: "Coming Soon", cursive;
-          size: 1.2em;
-        }
-        color: $dark-green;
-        text-align: center;
-
-        margin-bottom: 10vh;
-
-        a {
-          color: inherit;
-        }
-
-        ul {
-          display: inline-block;
-
-          li {
-            display: inline;
-            margin-right: 2em;
-          }
-        }
-      }
-
-      .thai {
-        margin-top: 2em;
-      }
-
-      section {
-        margin-bottom: 10vh;
-
-
-        .secthead, .secthead2, .secthead3 {
-          img {
-            width: 50%;
-            display: block;
-            margin: auto;
-          }
-        }
-        
-        .sectcontent {
-          clear: both;
-
-          p {
-            margin: 0.5em 0;
-          }
-        }
-      }
+    }
+    
+    .sectcontent {
+      clear: both;
     }
   }
 }
 
-.light-green {
-  color: $light-green;
+.dark-green {
+  color: $dark-green;
 }
 
 // vim: sw=2 tw=80 wrap

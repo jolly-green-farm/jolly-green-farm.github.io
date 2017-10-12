@@ -1,0 +1,21 @@
+// kb.scss      SCSS stylesheet for "kb.html"
+//
+// Update me:
+// $ sass styles/scss/kb.scss styles/css/kb.css
+
+@import "modules/colors";
+@import "classes/article";
+
+#mainmatter {
+  article {
+    section {
+      img.parting {
+        display: block;
+        margin: 2em auto 0 auto;
+        width: 50%;
+      }
+    }
+  }
+}
+
+// vim: sw=2 tw=80 wrap

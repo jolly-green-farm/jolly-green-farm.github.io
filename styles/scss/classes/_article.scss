@@ -1,0 +1,153 @@
+// article.scss         SCSS class for articles
+//
+// Import me:
+// @import "classes/article"
+
+@media only screen and (min-width: 1024px) {
+  #mainmatter {
+    margin-top: 10vh;
+
+    article {
+      width: 70%;
+      margin: auto;
+
+      #pagetitle {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      #toc {
+        font-size: 1.2em;
+        color: $dark-green;
+        text-align: center;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+
+          &:visited {
+            color: darken($dark-green, 20%);
+          }
+        }
+
+        ul {
+          display: inline-block;
+
+          li {
+            display: inline;
+            margin-right: 2em;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      #timemanagement {
+        margin-top: 1em;
+        text-align: right;
+        font-style: italic;
+      }
+
+      div.thai {
+        margin-top: 2em;
+      }
+
+      section {
+        padding-top: 100px;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Coming Soon", cursive;
+        color: $dark-green;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #mainmatter {
+    article {
+      width: 90%;
+      margin: auto;
+
+      #pagetitle {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      #toc {
+        font-size: 1.2em;
+        color: $dark-green;
+        text-align: center;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+
+          &:visited {
+            color: darken($dark-green, 20%);
+          }
+        }
+
+        ul {
+          display: inline-block;
+
+          li {
+            display: inline;
+            margin-right: 2em;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      #timemanagement {
+        margin-top: 1em;
+
+        text-align: right;
+        font-style: italic;
+      }
+
+      div.thai {
+        margin-top: 2em;
+      }
+
+      section {
+        margin-top: 10vh;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Coming Soon", cursive;
+        color: $dark-green;
+      }
+    }
+  }
+}
+
+.dark-green {
+  color: $dark-green;
+}
+
+// vim: sw=2 tw=80 wrap
