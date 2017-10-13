@@ -1,0 +1,62 @@
+// feel.scss    SCSS styling rules specific to "feel.html"
+//
+// Update me:
+// $ sass styles/scss/feel.scss styles/feel.css
+
+@import "modules/colors";
+@import "modules/fonts";
+@import "classes/article";
+
+#mainmatter {
+  article {
+    .h1-img {
+      display: block;
+      width: 50%;
+      margin: 0 auto 2vh auto;
+    }
+
+    img.walk {
+      display: block;
+      margin: 2em auto 0 auto;
+      width: 50%;
+    }
+
+    #crave {
+      img.walk {
+        margin-bottom: 2em;
+      }
+
+      ol {
+        margin-top: 5vh;
+        margin-left: 5%;
+
+        li {
+          margin-bottom: 3em;
+
+          div.thai {
+            margin-top: 1em;
+          }
+        }
+      }
+    }
+
+    section {
+      &#crave {
+        h1, h2 {
+          text-align: center;
+        }
+      }
+
+      .thai h2, h2.thai {
+        font-family: $thai;
+        font-weight: 100;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+// vim: sw=2 tw=80 wrap

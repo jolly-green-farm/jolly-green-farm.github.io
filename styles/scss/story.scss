@@ -1,0 +1,73 @@
+// story.scss   SCSS styling rules specific to "story.html"
+//
+// Update me:
+// $ sass styles/scss/story.scss styles/story.css
+
+@import "modules/colors";
+@import "modules/fonts";
+
+#mainmatter {
+  background: {
+    image: url("../images/story/70ourstory.jpg");
+    size: cover;
+    attachment: fixed;
+    position: right bottom;
+  }
+
+  #message {
+    position: relative;
+    top: 150px;
+    left: 0; right: 0;
+
+    width: 60%;
+    margin: 0 auto 300px auto;
+
+    padding: 2em;
+
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.75);
+
+    div.thai {
+      margin-top: 2em;
+    }
+
+    h1 {
+      font: {
+        family: $coming-soon;
+        size: 2.5em;
+      }
+
+      color: $dark-green;
+    }
+
+    p {
+      margin: 0.5em 0;
+    }
+  }
+
+  #shopping {
+    background-color: white;
+    margin-top: 0 !important;
+    padding-top: 5vh;
+
+    margin-bottom: 5vh;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #mainmatter {
+    #message {
+      width: 80%;
+    }
+  }
+}
+
+.dark-green {
+  color: $dark-green;
+}
+
+.thai {
+  font-family: $thai;
+}
+
+// vim: sw=2 tw=80 wrap

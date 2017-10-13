@@ -5,11 +5,15 @@
 
 @media only screen and (min-width: 1024px) {
   #mainmatter {
-    margin-top: 10vh;
+    margin-top: 100px;
 
     article {
       width: 70%;
       margin: auto;
+
+      &:nth-child(2) {
+        margin-top: 100px;
+      }
 
       #pagetitle {
         text-align: center;
@@ -31,8 +35,6 @@
         }
 
         ul {
-          display: inline-block;
-
           li {
             display: inline;
             margin-right: 2em;
