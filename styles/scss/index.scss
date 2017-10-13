@@ -24,7 +24,7 @@
       height: 90vh;
 
       .slide {
-        width: 50%;
+        width: calc(50% - 2px / 2);
         height: 50%;
         min-height: 400px;
 
@@ -76,9 +76,8 @@
           background-color: rgba(0, 0, 0, 0.3);
         }
 
-        // See `docs/margin-problem.dvi' relative to the repository's root.
-        &:nth-child(2), &:nth-child(4) {
-          padding-left: 2px;
+        &:nth-child(1), &:nth-child(3) {
+          margin-right: 2px;
         }
       }
     }
