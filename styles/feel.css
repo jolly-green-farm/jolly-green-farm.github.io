@@ -1,0 +1,117 @@
+@media only screen and (min-width: 1024px) {
+  #mainmatter {
+    margin-top: 100px; }
+    #mainmatter article {
+      width: 70%;
+      margin: auto; }
+      #mainmatter article:nth-child(2) {
+        margin-top: 100px; }
+      #mainmatter article #pagetitle {
+        text-align: center;
+        margin-bottom: 2rem; }
+      #mainmatter article #toc {
+        font-size: 1.2em;
+        color: #4b7329;
+        text-align: center; }
+        #mainmatter article #toc a {
+          color: inherit;
+          text-decoration: none; }
+          #mainmatter article #toc a:visited {
+            color: #1a280e; }
+        #mainmatter article #toc ul li {
+          display: inline;
+          margin-right: 2em;
+          white-space: nowrap; }
+      #mainmatter article #timemanagement {
+        margin-top: 1em;
+        text-align: right;
+        font-style: italic; }
+      #mainmatter article div.thai {
+        margin-top: 2em; }
+      #mainmatter article section {
+        padding-top: 100px; }
+      #mainmatter article p {
+        margin: 0.5em 0; }
+      #mainmatter article h1 {
+        font-size: 3em; }
+      #mainmatter article h2 {
+        font-size: 2em; }
+      #mainmatter article h1, #mainmatter article h2, #mainmatter article h3, #mainmatter article h4, #mainmatter article h5, #mainmatter article h6 {
+        font-family: "Coming Soon", cursive;
+        color: #4b7329; } }
+
+@media only screen and (max-width: 1023px) {
+  #mainmatter article {
+    width: 90%;
+    margin: auto; }
+    #mainmatter article #pagetitle {
+      text-align: center;
+      margin-bottom: 2rem; }
+    #mainmatter article #toc {
+      font-size: 1.2em;
+      color: #4b7329;
+      text-align: center; }
+      #mainmatter article #toc a {
+        color: inherit;
+        text-decoration: none; }
+        #mainmatter article #toc a:visited {
+          color: #1a280e; }
+      #mainmatter article #toc ul {
+        display: inline-block; }
+        #mainmatter article #toc ul li {
+          display: inline;
+          margin-right: 2em;
+          white-space: nowrap; }
+    #mainmatter article #timemanagement {
+      margin-top: 1em;
+      text-align: right;
+      font-style: italic; }
+    #mainmatter article div.thai {
+      margin-top: 2em; }
+    #mainmatter article section {
+      margin-top: 10vh; }
+    #mainmatter article p {
+      margin: 0.5em 0; }
+    #mainmatter article h1 {
+      font-size: 3em; }
+    #mainmatter article h2 {
+      font-size: 2em; }
+    #mainmatter article h1, #mainmatter article h2, #mainmatter article h3, #mainmatter article h4, #mainmatter article h5, #mainmatter article h6 {
+      font-family: "Coming Soon", cursive;
+      color: #4b7329; } }
+
+.dark-green {
+  color: #4b7329; }
+
+#mainmatter article .h1-img {
+  display: block;
+  width: 50%;
+  margin: 0 auto 2vh auto; }
+
+#mainmatter article img.walk {
+  display: block;
+  margin: 2em auto 0 auto;
+  width: 50%; }
+
+#mainmatter article #crave img.walk {
+  margin-bottom: 2em; }
+
+#mainmatter article #crave ol {
+  margin-top: 5vh;
+  margin-left: 5%; }
+  #mainmatter article #crave ol li {
+    margin-bottom: 3em; }
+    #mainmatter article #crave ol li div.thai {
+      margin-top: 1em; }
+
+#mainmatter article section#crave h1, #mainmatter article section#crave h2 {
+  text-align: center; }
+
+#mainmatter article section .thai h2, #mainmatter article section h2.thai {
+  font-family: "Taviraj", serif;
+  font-weight: 100; }
+
+#mainmatter article section h2 {
+  font-size: 1.2em; }
+
+/*# sourceMappingURL=feel.css.map */

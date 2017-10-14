@@ -1,0 +1,40 @@
+#mainmatter {
+  background-image: url("../images/story/70ourstory.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right bottom; }
+  #mainmatter #message {
+    position: relative;
+    top: 150px;
+    left: 0;
+    right: 0;
+    width: 60%;
+    margin: 0 auto 300px auto;
+    padding: 2em;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.75); }
+    #mainmatter #message div.thai {
+      margin-top: 2em; }
+    #mainmatter #message h1 {
+      font-family: "Coming Soon", cursive;
+      font-size: 2.5em;
+      color: #4b7329; }
+    #mainmatter #message p {
+      margin: 0.5em 0; }
+  #mainmatter #shopping {
+    background-color: white;
+    margin-top: 0 !important;
+    padding-top: 5vh;
+    margin-bottom: 5vh; }
+
+@media only screen and (max-width: 1023px) {
+  #mainmatter #message {
+    width: 80%; } }
+
+.dark-green {
+  color: #4b7329; }
+
+.thai {
+  font-family: "Taviraj", serif; }
+
+/*# sourceMappingURL=story.css.map */

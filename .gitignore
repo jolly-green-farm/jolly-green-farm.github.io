@@ -5,7 +5,7 @@
 #
 # WARNING: The presence of ^*.css$ files are essential in production. Keep them
 # on those occasions, maybe? :p
-styles/*.css*
+#styles/*.css*
 
 # The Sass preprocessor tends to leave behind deletable cache files.
 # We should just get rid of them.
